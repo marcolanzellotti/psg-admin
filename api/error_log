@@ -1,0 +1,268 @@
+[11-Jan-2023 18:59:30 America/Fortaleza] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php:3
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 3
+[11-Jan-2023 18:59:31 America/Fortaleza] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php:3
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 3
+[11-Jan-2023 18:59:32 America/Fortaleza] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php:3
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 3
+[11-Jan-2023 18:59:32 America/Fortaleza] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php:3
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 3
+[11-Jan-2023 19:00:50 America/Fortaleza] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php:3
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 3
+[11-Jan-2023 19:02:24 America/Fortaleza] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 3
+[11-Jan-2023 19:06:05 America/Fortaleza] PHP Warning:  require_once(inc/api-functions.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 2
+[11-Jan-2023 19:06:05 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required 'inc/api-functions.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 2
+[11-Jan-2023 19:06:06 America/Fortaleza] PHP Warning:  require_once(inc/api-functions.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 2
+[11-Jan-2023 19:06:06 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required 'inc/api-functions.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 2
+[11-Jan-2023 19:06:07 America/Fortaleza] PHP Warning:  require_once(inc/api-functions.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 2
+[11-Jan-2023 19:06:07 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required 'inc/api-functions.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 2
+[11-Jan-2023 19:06:08 America/Fortaleza] PHP Warning:  require_once(inc/api-functions.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 2
+[11-Jan-2023 19:06:08 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required 'inc/api-functions.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 2
+[11-Jan-2023 19:06:08 America/Fortaleza] PHP Warning:  require_once(inc/api-functions.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 2
+[11-Jan-2023 19:06:08 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required 'inc/api-functions.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 2
+[11-Jan-2023 19:06:09 America/Fortaleza] PHP Warning:  require_once(inc/api-functions.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 2
+[11-Jan-2023 19:06:09 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required 'inc/api-functions.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 2
+[11-Jan-2023 19:06:19 America/Fortaleza] PHP Warning:  require_once(inc/api-functions.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 2
+[11-Jan-2023 19:06:19 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required 'inc/api-functions.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 2
+[11-Jan-2023 19:06:19 America/Fortaleza] PHP Warning:  require_once(inc/api-functions.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 2
+[11-Jan-2023 19:06:19 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required 'inc/api-functions.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 2
+[11-Jan-2023 19:06:23 America/Fortaleza] PHP Warning:  require_once(inc/api-functions.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 2
+[11-Jan-2023 19:06:23 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required 'inc/api-functions.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 2
+[11-Jan-2023 19:08:43 America/Fortaleza] PHP Warning:  require_once(inc/api-functions.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 2
+[11-Jan-2023 19:08:43 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required 'inc/api-functions.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/hello.php on line 2
+[11-Jan-2023 19:13:28 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:4) in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/inc/functions.inc.php on line 7
+[11-Jan-2023 19:13:58 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:4) in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/inc/functions.inc.php on line 7
+[11-Jan-2023 19:17:05 America/Fortaleza] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/inc/functions.inc.php on line 7
+[11-Jan-2023 19:26:36 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:12
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 12
+[11-Jan-2023 19:26:48 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:13
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 13
+[11-Jan-2023 19:27:18 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:12) in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/inc/api-functions.inc.php on line 8
+[11-Jan-2023 19:29:49 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:13
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 13
+[11-Jan-2023 19:29:50 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:13
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 13
+[11-Jan-2023 19:29:51 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:13
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 13
+[11-Jan-2023 19:30:08 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:13
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 13
+[11-Jan-2023 19:30:18 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:13
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 13
+[11-Jan-2023 19:30:19 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:13
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 13
+[11-Jan-2023 19:30:20 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:13
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 13
+[11-Jan-2023 19:30:20 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:13
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 13
+[11-Jan-2023 19:30:26 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:13
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 13
+[11-Jan-2023 19:30:27 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:13
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 13
+[11-Jan-2023 19:31:23 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:13
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 13
+[11-Jan-2023 19:31:24 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:13
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 13
+[11-Jan-2023 19:31:24 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:13
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 13
+[11-Jan-2023 19:31:25 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:13
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 13
+[11-Jan-2023 19:31:29 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:12) in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/inc/api-functions.inc.php on line 8
+[11-Jan-2023 19:32:00 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:12) in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/inc/api-functions.inc.php on line 8
+[11-Jan-2023 19:32:03 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:12) in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/inc/api-functions.inc.php on line 8
+[11-Jan-2023 19:32:29 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:13) in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/inc/api-functions.inc.php on line 8
+[11-Jan-2023 19:33:17 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:14
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 14
+[11-Jan-2023 19:33:18 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:14
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 14
+[11-Jan-2023 19:33:19 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:14
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 14
+[11-Jan-2023 19:33:19 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:14
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 14
+[11-Jan-2023 19:33:20 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:14
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 14
+[11-Jan-2023 19:33:20 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:14
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 14
+[11-Jan-2023 19:33:21 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:14
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 14
+[12-Jan-2023 09:51:53 America/Fortaleza] PHP Warning:  mysqli::query(): Empty query in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 23
+[12-Jan-2023 09:51:53 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:26
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 26
+[12-Jan-2023 09:52:01 America/Fortaleza] PHP Warning:  mysqli::query(): Empty query in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 23
+[12-Jan-2023 09:52:01 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:26
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 26
+[12-Jan-2023 09:52:07 America/Fortaleza] PHP Warning:  mysqli::query(): Empty query in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 23
+[12-Jan-2023 09:52:07 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:26
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 26
+[12-Jan-2023 09:52:45 America/Fortaleza] PHP Warning:  mysqli::query(): Empty query in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 23
+[12-Jan-2023 09:52:45 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:26
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 26
+[12-Jan-2023 09:52:45 America/Fortaleza] PHP Warning:  mysqli::query(): Empty query in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 23
+[12-Jan-2023 09:52:45 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:26
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 26
+[12-Jan-2023 09:52:47 America/Fortaleza] PHP Warning:  mysqli::query(): Empty query in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 23
+[12-Jan-2023 09:52:47 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:26
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 26
+[12-Jan-2023 09:53:12 America/Fortaleza] PHP Warning:  mysqli::query(): Empty query in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 23
+[12-Jan-2023 09:53:12 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:27
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 27
+[12-Jan-2023 09:53:15 America/Fortaleza] PHP Warning:  mysqli::query(): Empty query in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 23
+[12-Jan-2023 09:53:15 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:27
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 27
+[12-Jan-2023 09:53:16 America/Fortaleza] PHP Warning:  mysqli::query(): Empty query in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 23
+[12-Jan-2023 09:53:16 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:27
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 27
+[12-Jan-2023 09:53:26 America/Fortaleza] PHP Warning:  mysqli::query(): Empty query in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 23
+[12-Jan-2023 09:53:26 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:27
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 27
+[12-Jan-2023 09:53:28 America/Fortaleza] PHP Warning:  mysqli::query(): Empty query in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 23
+[12-Jan-2023 09:53:28 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:27
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 27
+[12-Jan-2023 09:53:28 America/Fortaleza] PHP Warning:  mysqli::query(): Empty query in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 23
+[12-Jan-2023 09:53:28 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:27
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 27
+[12-Jan-2023 09:53:29 America/Fortaleza] PHP Warning:  mysqli::query(): Empty query in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 23
+[12-Jan-2023 09:53:29 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:27
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 27
+[12-Jan-2023 09:53:29 America/Fortaleza] PHP Warning:  mysqli::query(): Empty query in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 23
+[12-Jan-2023 09:53:29 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:27
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 27
+[12-Jan-2023 09:53:29 America/Fortaleza] PHP Warning:  mysqli::query(): Empty query in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 23
+[12-Jan-2023 09:53:29 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:27
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 27
+[12-Jan-2023 09:53:29 America/Fortaleza] PHP Warning:  mysqli::query(): Empty query in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 23
+[12-Jan-2023 09:53:29 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:27
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 27
+[12-Jan-2023 09:53:29 America/Fortaleza] PHP Warning:  mysqli::query(): Empty query in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 23
+[12-Jan-2023 09:53:29 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:27
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 27
+[12-Jan-2023 09:53:30 America/Fortaleza] PHP Warning:  mysqli::query(): Empty query in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 23
+[12-Jan-2023 09:53:30 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:27
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 27
+[12-Jan-2023 09:53:31 America/Fortaleza] PHP Warning:  mysqli::query(): Empty query in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 23
+[12-Jan-2023 09:53:31 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:27
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 27
+[12-Jan-2023 09:53:32 America/Fortaleza] PHP Warning:  mysqli::query(): Empty query in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 23
+[12-Jan-2023 09:53:32 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:27
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 27
+[12-Jan-2023 09:53:41 America/Fortaleza] PHP Warning:  mysqli::query(): Empty query in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 23
+[12-Jan-2023 09:53:41 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:27
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 27
+[12-Jan-2023 09:53:43 America/Fortaleza] PHP Warning:  mysqli::query(): Empty query in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 23
+[12-Jan-2023 09:53:43 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:27
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 27
+[12-Jan-2023 12:09:25 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:28
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 28
+[12-Jan-2023 12:09:27 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:28
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 28
+[12-Jan-2023 12:09:37 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:28
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 28
+[12-Jan-2023 12:09:52 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:28
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php on line 28
+[12-Jan-2023 12:10:05 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/eudesa99/planosecagordura.com.br/psg-admin/api/habits.php:25) in /home1/eudesa99/planosecagordura.com.br/psg-admin/api/inc/api-functions.inc.php on line 9

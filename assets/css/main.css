@@ -1,0 +1,107 @@
+label {
+    color: black !important;
+}
+
+table.small {
+    font-size: smaller;
+}
+
+table.striped tr {
+    border-bottom: 1px solid black;
+}
+
+.container {
+    width: 90%;
+}
+
+input[type="text"],
+input[type='password'] {
+    padding: 1em !important;
+    max-width: 90% !important;
+}
+
+th {
+    white-space: nowrap;
+}
+
+.scroll-x {
+    overflow-x: scroll;
+}
+
+i.material-icons {
+    display: inline !important;
+    margin: 3px;
+    vertical-align: middle !important;
+}
+
+nav {
+    overflow-x: auto;
+}
+
+span.field-icon {
+    float: right;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.container.login {
+    width: 30em !important;
+    background-color: rgb(255, 255, 255) !important;
+    box-shadow: 2px 2px 3px 0px rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 1em;
+    max-width: 90%;
+}
+
+.p1 {
+    padding: 1em;
+}
+
+.hoverable {
+    cursor: pointer;
+}
+
+#new-mentor {
+    margin-top: 3em;
+    width: 50em;
+    padding: 1em;
+}
+
+.scroll-trigger {
+    border: none;
+    background-color: rgb(0, 102, 102);
+    color: white;
+    width: 3em;
+    position: fixed;
+    bottom: 0;
+    transition: .2s;
+    height: 80vh;
+    cursor: pointer;
+
+}
+
+.scroll-trigger:hover {
+    opacity: .8;
+}
+
+.scroll-trigger.scroll-right {
+    right: 0;
+}
+
+.scroll-trigger.scroll-left {
+    left: 0;
+}
+
+.diaries {
+    background-color: rgb(243, 243, 243);
+    padding: 1em;
+    border-radius: 3px;
+}
+
+.diaries .diary {
+    padding: 1em;
+    border-top: 1px solid black;
+}

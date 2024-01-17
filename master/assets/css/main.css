@@ -1,0 +1,103 @@
+body {
+    background-image: url('https://img.freepik.com/vetores-gratis/fundo-branco-abstrato_23-2148810113.jpg?w=1000');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+label {
+    color: black !important;
+}
+
+table.small {
+    font-size: smaller;
+}
+
+table.striped tr {
+    border-bottom: 1px solid black;
+}
+
+.container {
+    width: 90%;
+}
+
+.container.medium {
+    width: 60%;
+}
+
+.container.small {
+    width: 40%;
+}
+
+input[type="text"],
+input[type='password'] {
+    padding: 1em !important;
+    max-width: 90% !important;
+}
+
+th {
+    white-space: nowrap;
+}
+
+.scroll-x {
+    overflow-x: scroll;
+}
+
+i.material-icons {
+    display: inline !important;
+    margin: 3px;
+    vertical-align: middle !important;
+}
+
+span.field-icon {
+    float: right;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.container.login {
+    width: 30em !important;
+    background-color: rgb(255, 255, 255) !important;
+    box-shadow: 2px 2px 3px 0px rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 1em;
+    max-width: 90%;
+}
+
+.p1 {
+    padding: 1em;
+}
+
+.mt1 {
+    margin-top: 1em;
+}
+
+.hoverable {
+    cursor: pointer;
+}
+
+@media only screen and (max-width:720px) {
+    .container {
+        width: 90% !important;
+    }
+}
+
+.blocks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block {
+    width: 20em;
+    height: 20em;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(5px);
+    box-shadow: 2px 2px 10px rgba(19, 19, 19, 0.253);
+    
+}

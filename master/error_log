@@ -1,0 +1,90 @@
+[17-Feb-2023 15:47:19 America/Fortaleza] PHP Warning:  session_start(): Cannot start session when headers already sent in /home1/eudesa99/planosecagordura.com.br/psg-admin/inc/conf.inc.php on line 2
+[17-Feb-2023 15:47:20 America/Fortaleza] PHP Warning:  session_start(): Cannot start session when headers already sent in /home1/eudesa99/planosecagordura.com.br/psg-admin/inc/conf.inc.php on line 2
+[17-Feb-2023 15:47:26 America/Fortaleza] PHP Warning:  session_start(): Cannot start session when headers already sent in /home1/eudesa99/planosecagordura.com.br/psg-admin/inc/conf.inc.php on line 2
+[17-Feb-2023 15:47:27 America/Fortaleza] PHP Warning:  session_start(): Cannot start session when headers already sent in /home1/eudesa99/planosecagordura.com.br/psg-admin/inc/conf.inc.php on line 2
+[23-Feb-2023 16:41:50 America/Fortaleza] PHP Warning:  require_once(../../inc/functions.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:41:50 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required '../../inc/functions.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:41:51 America/Fortaleza] PHP Warning:  require_once(../../inc/functions.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:41:51 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required '../../inc/functions.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:42:15 America/Fortaleza] PHP Warning:  require_once(inc/functions.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:42:15 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required 'inc/functions.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:42:16 America/Fortaleza] PHP Warning:  require_once(inc/functions.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:42:16 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required 'inc/functions.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:42:17 America/Fortaleza] PHP Warning:  require_once(inc/functions.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:42:17 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required 'inc/functions.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:42:27 America/Fortaleza] PHP Warning:  require_once(./inc/functions.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:42:27 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required './inc/functions.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:42:28 America/Fortaleza] PHP Warning:  require_once(./inc/functions.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:42:28 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required './inc/functions.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:42:28 America/Fortaleza] PHP Warning:  require_once(./inc/functions.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:42:28 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required './inc/functions.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:42:29 America/Fortaleza] PHP Warning:  require_once(./inc/functions.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:42:29 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required './inc/functions.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:42:33 America/Fortaleza] PHP Warning:  require_once(./inc/functions.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:42:33 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required './inc/functions.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:42:35 America/Fortaleza] PHP Warning:  require_once(./inc/functions.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:42:35 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required './inc/functions.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:42:36 America/Fortaleza] PHP Warning:  require_once(./inc/functions.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:42:36 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required './inc/functions.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 2
+[23-Feb-2023 16:42:40 America/Fortaleza] PHP Warning:  require_once(../inc/views/head.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 12
+[23-Feb-2023 16:42:40 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required '../inc/views/head.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 12
+[23-Feb-2023 16:42:55 America/Fortaleza] PHP Warning:  require_once(../inc/views/head.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 12
+[23-Feb-2023 16:42:55 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required '../inc/views/head.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 12
+[23-Feb-2023 16:42:56 America/Fortaleza] PHP Warning:  require_once(../inc/views/head.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 12
+[23-Feb-2023 16:42:56 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required '../inc/views/head.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 12
+[23-Feb-2023 16:42:58 America/Fortaleza] PHP Warning:  require_once(../inc/views/head.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 12
+[23-Feb-2023 16:42:58 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required '../inc/views/head.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 12
+[23-Feb-2023 16:42:59 America/Fortaleza] PHP Warning:  require_once(../inc/views/head.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 12
+[23-Feb-2023 16:42:59 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required '../inc/views/head.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 12
+[23-Feb-2023 16:43:00 America/Fortaleza] PHP Warning:  require_once(../inc/views/head.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 12
+[23-Feb-2023 16:43:00 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required '../inc/views/head.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 12
+[23-Feb-2023 16:43:06 America/Fortaleza] PHP Warning:  require_once(../inc/views/header.inc.php): failed to open stream: No such file or directory in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 17
+[23-Feb-2023 16:43:06 America/Fortaleza] PHP Fatal error:  require_once(): Failed opening required '../inc/views/header.inc.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/redirects.php on line 17
+[24-Feb-2023 09:47:36 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/select-mentor.php:143
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/select-mentor.php on line 143
+[24-Feb-2023 09:48:45 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/select-mentor.php:143
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/select-mentor.php on line 143
+[24-Feb-2023 09:49:11 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/select-mentor.php:144
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/select-mentor.php on line 144
+[24-Feb-2023 09:49:12 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/select-mentor.php:144
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/select-mentor.php on line 144
+[24-Feb-2023 09:49:13 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/select-mentor.php:144
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/select-mentor.php on line 144
+[24-Feb-2023 09:50:19 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/select-mentor.php:147
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/select-mentor.php on line 147
+[24-Feb-2023 09:50:20 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/select-mentor.php:147
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/select-mentor.php on line 147
+[24-Feb-2023 09:50:21 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/select-mentor.php:147
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/select-mentor.php on line 147
+[24-Feb-2023 09:50:41 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/select-mentor.php:147
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/select-mentor.php on line 147
+[24-Feb-2023 16:00:15 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/select-mentor.php:149
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/select-mentor.php on line 149
+[24-Feb-2023 16:04:21 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/select-mentor.php:149
+Stack trace:
+#0 {main}
+  thrown in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/select-mentor.php on line 149
+[27-Feb-2023 10:06:38 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/eudesa99/planosecagordura.com.br/psg-admin/master/edit-mentor.php:6) in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/edit-mentor.php on line 33
+[27-Feb-2023 10:37:38 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/eudesa99/planosecagordura.com.br/psg-admin/master/manage-mentors.php:8) in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/manage-mentors.php on line 15
+[27-Feb-2023 10:38:23 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/eudesa99/planosecagordura.com.br/psg-admin/master/manage-mentors.php:8) in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/manage-mentors.php on line 15
+[27-Feb-2023 10:38:33 America/Fortaleza] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/eudesa99/planosecagordura.com.br/psg-admin/master/manage-mentors.php:8) in /home1/eudesa99/planosecagordura.com.br/psg-admin/master/manage-mentors.php on line 15
