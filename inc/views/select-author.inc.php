@@ -130,7 +130,7 @@ if (isset($_GET['deleteHabitAuthor'])) {
                 $checked[$data['author']] = "checked";
                 echo "
             <td>";
-                $authors = $con->query("SELECT * FROM mentors WHERE is_author=1");
+                $authors = $con->query("SELECT * FROM mentors WHERE is_author=1 AND is_view_select_author = 1");
                 while ($author = $authors->fetch_assoc()) {
                     $name = $author['name'];
                     echo "

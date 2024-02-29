@@ -39,7 +39,6 @@
             <?php
 
             $completion = (isset($_POST['search_weekly_updates'])) ? "AND name LIKE '%$_POST[search_weekly_updates]%' OR phone like '%$_POST[search_weekly_updates]%'" : "";
-            echo "SELECT DISTINCT * FROM weekly_updates" . ($master ? " WHERE 1 " : " WHERE mentor='$mentor' ") . " $completion GROUP BY name, date ORDER BY id DESC LIMIT 500";
             $qWeeklyUpdates = $con->query("SELECT DISTINCT * FROM weekly_updates" . ($master ? " WHERE 1 " : " WHERE mentor='$mentor' ") . " $completion GROUP BY name, date ORDER BY id DESC LIMIT 500");
             $weeklyUpdates = [];
             while ($data = $qWeeklyUpdates->fetch_assoc()) $weeklyUpdates[] = $data;

@@ -1,22 +1,37 @@
 <?php
 
-$qTrainings = $pCon->query("SELECT * FROM trainings ORDER BY id");
-$trainings = [];
-while ($training = $qTrainings->fetch_assoc()) $trainings[explode(" ", $training['title'])[1]] = $training;
-ksort($trainings);
-
 if (issetPostFields(['url', 'createTraining', 'title'])) {
     $title = E($_POST['title']);
     $url = E($_POST['url']);
 
     $qAddTraining = $pCon->query("INSERT INTO trainings (title, url) VALUES ('$title', '$url')");
     if ($qAddTraining) {
-        echo "Ok";
+        header("Location: ?view=trainings");
+        $_SESSION['msg'] = 'Treino cadastrado com sucesso.';
     }
 }
+
+$qTrainings = $pCon->query("SELECT * FROM trainings ORDER BY id");
+
+while ($training = $qTrainings->fetch_assoc()) {
+    $trainings[] = $training;
+}
+
 ?>
 <div class="container">
     <h5>Novo treino</h5>
+    <?php if (isset($_SESSION['msg'])) {
+        echo '
+        <div class="row">
+            <div class="col s6">
+                <div class="green lighten-2 white-text center-align" >
+                    <p style="padding: 10px;">'. $_SESSION['msg'].'</p>
+                </div>
+            </div>
+        </div>';
+      unset($_SESSION['msg']);
+    }
+    ?>
     <?php if (isset($error)) echo "<blockquote>$error</blockquote>"; ?>
     <br />
     <form method="POST" action="">

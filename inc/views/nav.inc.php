@@ -1,8 +1,23 @@
 <nav class="nav-extended blue">
 
     <div class="nav-wrapper blue">
-        <a href="?view=profile"><b><?= $loggedMentor['name'] ?></b></a>
+        <div style="margin: 15px;">
+            <b>Painel Administrativo PSG</b>
+            <p>Bem vindo, <a href="?view=profile" title="Usuário logado"><b><?= $loggedMentor['name'] ?></b></a></p>
+        </div>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+        <ul class="dropdown-content" id="dropdown-psg">
+            <li>
+                <a href="/psg-admin/master/psg/subscriptions.php">Inscrições</a>
+            </li>
+            <li>
+                <a href="/psg-admin/master/psg/updates.php">Atualizações</a>
+            </li>
+            <li>
+                <a href="/psg-admin/master/psg/analysis.php">Análise</a>
+            </li>
+        </ul>
 
         <ul class="right hide-on-med-and-down">
             <?php if ($loggedMentor['name'] == "Julyane") {
@@ -13,6 +28,15 @@
             ?>
                 <li><a href="?view=mentors">Mentores</a></li>
             <?php } ?>
+
+            <?php
+            if ($loggedMentor['name'] == "Administrativo2") {
+            ?>
+
+                <li><a href="painel.php">Página Inicial</a></li>
+            <?php
+            }
+            ?>
 
             <?php if ($master) { ?>
                 <li><a href="?view=master_area">Painel master</a></li>
@@ -84,14 +108,22 @@
 
 </nav>
 <ul class="sidenav sidenav-close" id="mobile-demo">
+    <?php
+    if ($loggedMentor['name'] == "Administrativo2") {
+    ?>
+
+        <li><a href="painel.php">Página Inicial</a></li>
+    <?php
+    }
+    ?>
     <?php if ($master) { ?>
         <li><a href="?view=master_area">Painel master</a></li>
         <li class="green white-text"><a href="/psg-admin/master">Painel master (<b>em construção</b>)</a></li>
     <?php } ?>
 
     <?php if ($viewSubscriptions) { ?>
-                <li><a href="?view=platform_team">Equipe</a></li>
-            <?php } ?>
+        <li><a href="?view=platform_team">Equipe</a></li>
+    <?php } ?>
 
     <?php if ($viewSubscriptions) { ?>
         <li><a href="?view=subscriptions">PSG - Inscrições</a></li>
@@ -118,7 +150,7 @@
     <?php if ($viewWeeklyUpdates) { ?>
         <li><a href="?view=weekly_updates">Fase 2 - Atualização semanal</a></li>
     <?php } ?>
-    <?php if ($master) { ?>
+    <?php if ($master || in_array($loggedMentor['name'], ['marco', 'Marco', 'Administrativo2'])) { ?>
         <li><a href="?view=renew_habits">Fase 2 - Renovação</a></li>
     <?php } ?>
 

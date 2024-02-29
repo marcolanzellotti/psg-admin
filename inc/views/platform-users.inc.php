@@ -1,4 +1,5 @@
 <?php
+//var_dump($_SESSION);die;
 if (isset($_GET['verify'])) {
     $user = intval($_GET['verify']);
     $qVerify = $pCon->query("UPDATE users SET verified=1 WHERE id=$user");
@@ -30,21 +31,37 @@ $qUsers = $pCon->query("SELECT * FROM users WHERE 1 $completion GROUP BY email O
             <tr>
 
                 <th></th>
+                <th></th>
                 <th>Nome</th>
                 <th>Data de cadastro</th>
                 <th>Email</th>
                 <th>Telefone</th>
                 <th>Senha</th>
                 <th>Acesso</th>
-                <th></th>
-                <th></th>
+                <th>WhatsApp</th>
+                <th style="text-align: center;">Ações</th>
             </tr>
 
             <?php
 
             while ($user = $qUsers->fetch_assoc()) {
+
+                if ($user['is_active'] == 1) {
+                    $is_active = 'inactive';
+                    $btnName = 'Desativar';
+                    $colorBtn = 'red';
+                } else {
+                    $is_active = 'active';
+                    $btnName = 'Ativar';
+                    $colorBtn = 'blue';
+                }
+
             ?>
                 <tr>
+                    <td>
+                        <!-- <a href="?view=platform_users&is_active=<?= $user['id'] ?>" class="blue" style="padding:3px 10px;color:white;border-radius:3px;" title="">Desativar</a> -->
+                        <a onclick="handleIsActive(<?= $user['id'] ?>, '<?= $is_active ?>')" class="<?= $colorBtn ?>" style="padding:3px 10px;color:white;border-radius:3px; cursor: pointer" title=""><?= $btnName ?></a>
+                    </td>
                     <td>
                         <a href="?view=edit_platform_users&edit=<?= $user['id'] ?>"><i class="material-icons">edit</i></a>
                     </td>
@@ -69,9 +86,9 @@ $qUsers = $pCon->query("SELECT * FROM users WHERE 1 $completion GROUP BY email O
                     <td>
                         <a class="z-depth-3" target="_blank" href="https://api.whatsapp.com/send?phone=<?= $user['phone'] ?>" style="padding:3px 10px;background-color:limegreen;color:white;border-radius:3px;">Whatsapp</a>
                     </td>
+
                     <td>
                         <a href="?view=platform_users&delete=<?= $user['id'] ?>" class="red" style="padding:3px 10px;color:white;border-radius:3px;">Excluir</a>
-
                     </td>
 
                 </tr>

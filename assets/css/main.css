@@ -64,7 +64,7 @@ span.field-icon {
     cursor: pointer;
 }
 
-#new-mentor {
+#new-mentor, #new-consultant {
     margin-top: 3em;
     width: 50em;
     padding: 1em;

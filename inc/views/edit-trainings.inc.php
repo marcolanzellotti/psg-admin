@@ -56,6 +56,7 @@ if (issetPostFields(["updateTraining", "title", "url"])) {
             <div class="col s12">
                 <button type="submit" class="btn" name="save">Salvar <i class="material-icons">send</i></button>
                 <a class="btn red" href="?view=edit_training&delete=<?= $id ?>" name="save">Excluir <i class="material-icons">delete</i></a>
+                <a class="btn blue" href="?view=trainings" name="save">Voltar</a>
             </div>
 
 

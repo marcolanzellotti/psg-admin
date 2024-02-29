@@ -87,6 +87,8 @@ if (issetPostFields(["updateLive", "title", "url"])) {
     header("Location: /psg-admin/painel.php?view=edit_live&live=$id");
 }
 
+$round = rand(1,6);
+
 
 ?>
 <html>
@@ -98,7 +100,7 @@ if (issetPostFields(["updateLive", "title", "url"])) {
     <!-- Compiled and minified CSS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js?v=<?= $round ?>" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/imask"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -136,6 +138,8 @@ if (issetPostFields(["updateLive", "title", "url"])) {
 
     if (($master || 1) && $view == "new_mentor")                    require_once("./inc/views/new-mentor.inc.php");
 
+    if (($master || 1) && $view == "new_consultant")                    require_once("./inc/views/new-consultant.inc.php");
+
     if ($master && $view == "new_live")                             require_once("./inc/views/new-live.inc.php");
 
     if ($master && $view == "edit_live")                            require_once("./inc/views/edit-live.inc.php");
@@ -153,6 +157,8 @@ if (issetPostFields(["updateLive", "title", "url"])) {
     if ($master && $view == "delete_trainning_mentor")              require_once("./inc/views/delete-trainning-mentor.inc.php");
 
     if (($master || 1) && $view == "edit_mentor")                   require_once("./inc/views/edit-mentor.inc.php");
+
+    if (($master || 1) && $view == "edit_consultant")                   require_once("./inc/views/edit-consultant.inc.php");
 
     if ($master && $view == "master_area")                          require_once("./inc/views/master-area.inc.php");
 
@@ -246,9 +252,7 @@ if (issetPostFields(["updateLive", "title", "url"])) {
 
     if ($view == "select_mentor_all")                   require_once("./inc/views/select-mentor-all.inc.php");
 
-    if ($view == "panel") {
-        require_once("./inc/views/panel.inc.php");
-    }
+    if ($view == "panel") {                             require_once("./inc/views/panel.inc.php");    }
 
     if ($view == "upload_calendar")                   require_once("./inc/views/upload-calendar.inc.php");
 
@@ -264,6 +268,7 @@ if (issetPostFields(["updateLive", "title", "url"])) {
 <script src="assets/js/custom.js"></script>
 <script>
     $(document).ready(function() {
+        $('.collapsible').collapsible();
         $('.sidenav').sidenav()
         $('select').formSelect()
         $('.materialboxed').materialbox()

@@ -8,9 +8,7 @@ $mentor = mysqli_escape_string($con, $mentor);
 $loggedMentor = $con->query("SELECT * FROM mentors WHERE username='$mentor'")->fetch_assoc();
 $master = $loggedMentor['master'];
 
-if (issetGetFields([
-    "mentor", "togglepermission"
-])) {
+if (issetGetFields(["mentor", "togglepermission"])) {
     if (!$master) {
         $res->success = false;
         $res->error = "Access denied";
@@ -109,7 +107,7 @@ if (issetGetFields([
         $habit = intval($_GET['toggleHabitAuthor']);
         $author = intval($_GET['author']);
         $qToggleHabitAuthor = $con->query("UPDATE habits SET author=$author WHERE id=$habit");
-        var_dump($con);
+        
         if ($qToggleHabitAuthor) {
             $res->success = true;
         } else {
@@ -134,7 +132,23 @@ if (issetGetFields([
             $res->error = mysqli_error($con);
         }
     }
-} elseif (issetGetFields(['toggleHabitCoAuthor', 'habit', 'co_author'])) {
+} elseif (issetGetFields(['toggleConsultantMentor', 'consultant', 'mentor'])){
+    if (!$loggedMentor['master'] && 0) {
+        $res->success = false;
+        $res->error = "Access denied";
+    } else {
+        $consultant = intval($_GET['consultant']);
+        $mentor = intval($_GET['mentor']);
+        $qToggleConsultantMentor = $con->query("UPDATE mentors SET mentor_id=$mentor WHERE id=$consultant");
+        if ($qToggleConsultantMentor) {
+            $res->success = true;
+            //            $res->query = "UPDATE mentors SET co_author_id=$author WHERE id=$mentor";
+        } else {
+            $res->success = false;
+            $res->error = mysqli_error($con);
+        }
+    }
+}elseif (issetGetFields(['toggleHabitCoAuthor', 'habit', 'co_author'])) {
     if (!$loggedMentor['master'] && 0) {
         $res->success = false;
         $res->error = "Access denied";
@@ -212,6 +226,37 @@ if (issetGetFields([
             $res->error = mysqli_error($con);
         }
     }
+} elseif ($_GET['deleteHabits']) {
+    $idHabits = intval($_GET['deleteHabits']);
+    $return = deleteHabit($idHabits);
+} elseif (issetGetFields(['generateRenewalSpreadsheet'])) {
+    $workbook = new Spreadsheet_Excel_Writer();
+    $workbook->setVersion(8);
+    $workbook->send("result.xls");
+    $boldFormat = &$workbook->addFormat();
+    $boldFormat->setBold();
+    $worksheet = &$workbook->addWorksheet('Dados');
+    $title_index = 0;
+    foreach ($headers["not-sub-users"] as $title) {
+        $worksheet->setInputEncoding("utf-8");
+        $worksheet->write(0, $title_index, $title, $boldFormat);
+        $title_index++;
+    }
+    $row_index = 1;
+    while ($row = $qUsers->fetch_assoc()) {
+        $qTmp = $con->query("SELECT create_time FROM customers WHERE phone='$row[phone]'");
+        $tmp = $qTmp->fetch_assoc();
+        if (intval($tmp['create_time']) <= 1687328488) continue;
+
+        $col_index = 0;
+        foreach ($row as $cell) {
+            $worksheet->write($row_index, $col_index, $cell);
+            $col_index++;
+        }
+        $row_index++;
+    }
+
+    $workbook->close();
 } else {
     $res->success = false;
     $res->error = "Invalid option";

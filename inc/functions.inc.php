@@ -95,6 +95,30 @@ function createMentor(string $name, string $username, string $email, string $pho
     return ($qCreateMentor) ? $con->insert_id : false;
 }
 
+function createConsultant(string $name, string $username, string $email, string $phone, string $password, $level, $author)
+{
+    global $con;
+    $name = mysqli_escape_string($con, $name);
+    $username = mysqli_escape_string($con, $username);
+    $email = mysqli_escape_string($con, $email);
+    $phone = mysqli_escape_string($con, $phone);
+
+    $password = mysqli_escape_string($con, $password);
+
+    if ($level == "co-author") {
+        $isCoAuthor = 1;
+    } elseif ($level == "consultant") {
+        $isCoAuthor = 0;
+        $isConsultant = 1;
+    } else {
+        $isCoAuthor = 0;
+    }
+
+    $qCreateMentor = $con->query("INSERT INTO mentors (name, username, email, phone, password, is_co_author, author_id, is_consultant) VALUES ('$name', '$username', '$email', '$phone', '$password', $isCoAuthor, $author, $isConsultant)");
+
+    return ($qCreateMentor) ? $con->insert_id : false;
+}
+
 function getWhatsappSubscriptionUrl()
 {
     global $con;
@@ -172,7 +196,7 @@ function getHabits($mentor)
     return $con->query("SELECT DISTINCT * FROM habits WHERE mentor='$mentor' GROUP BY name ORDER BY id DESC");
 }
 
-function formateDatePtBr($value) 
+function formateDatePtBr($value)
 {
     return (new DateTime($value))->format('d/m/Y H:i:s');
 }

@@ -185,7 +185,10 @@
 
                         $selected = ($data['mentor'] == $mentor['username'] || $data['co_author'] == $con->query("SELECT id FROM mentors WHERE username='$mentor[username]'")->fetch_assoc()['id']) ? " selected" : "";
 
-                        echo "<option value=\"$mentor[username]\"$selected>$mentor[name]</option>\n";
+                        $countMentors = $con->query("SELECT count(id) as countMentors FROM mentors m WHERE co_author_id ='$mentor[id]'");
+                        $countMentor = $countMentors->fetch_assoc();
+
+                        echo "<option value=\"$mentor[username]\"$selected>$mentor[name] ($countMentor[countMentors])</option>\n";
                     }
                     if (!$data['mentor']) $data['mentor'] = "<b style=\"color:red;\">Não selecionado</b>";
 

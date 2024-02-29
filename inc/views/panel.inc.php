@@ -27,7 +27,7 @@ if ($loggedMentor['admin'] && $loggedMentor['name'] != "Administrativo2") {
             echo $_SESSION['msg'];
             unset($_SESSION['msg']);
         }
-        ?>                                                                                                                
+        ?>
         <form action="" method="POST">
             <div class="row">
                 <input type="hidden" value="<?= $redirect['id'] ?>" name="id">
@@ -54,6 +54,26 @@ if ($loggedMentor['admin'] && $loggedMentor['name'] != "Administrativo2") {
         <h5><a href="?view=platform_users">Usuários plataforma</a></h5>
         <h5><a href="?view=platform_2_users">Usuários plataforma (Sem acompanhamento)</a></h5>
         <!-- <h5><a href="http://fase2.planosecagordura.com.br/receitas/admin/recipes.2.php">Portal de receitas</a></h5> -->
+    </div>
+    <div class="container section">
+    <?php
+    if (issetPostFields(['turbo_url', 'save_turbo_url'])) {
+        $url = E($_POST['turbo_url']);
+        file_put_contents("../psgturbo/url.inc", $url);
+    }
+    $url = file_get_contents("../psgturbo/url.inc", true);
+    ?>
+    <h5>Grupo PSG Turbo</h5>(<a target="_blank" href="https://planosecagordura.com.br/psgturbo/">https://planosecagordura.com.br/psgturbo/</a>)
+    <form action="" method="POST">
+        <div class="row">
+            <input type="text" name="turbo_url" class="col m6 s12" value="<?= $url ?>" id="">
+            <button class="btn waves-effect waves-light col" type="submit" value="submit" name="save_turbo_url">Salvar
+                <i class="material-icons right">send</i>
+            </button>
+
+        </div>
+    </form>
+</div>
     <?php
 } elseif ($loggedMentor['name'] == "Julyane") {
 

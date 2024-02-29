@@ -6,7 +6,7 @@ if (issetPostFields(["name", "email", "phone", "createHabit"])) {
     $email = E($_POST['email']);
     $phone = E($_POST['phone']);
     $date = E($_POST['date']);
-    $qAddHabit = $con->query("INSERT INTO habits (name, mail, phone, create_date) VALUES ('$name', '$email', '$phone', '$date')");
+    $qAddHabit = $con->query("INSERT INTO habits (name, mail, phone, create_date, created_at) VALUES ('$name', '$email', '$phone', '$date', NOW())");
     if ($qAddHabit) {
         echo "<script>document.location.href=\"painel.php?view=edit_habits&habit=$con->insert_id\"</script>";
     } else {

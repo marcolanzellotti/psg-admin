@@ -370,6 +370,20 @@ if ($view == "master_area") {
     </div>
 </div>
 
+<div class="container section">
+    <h5>Consultores <a href="?view=new_consultant" class="secondary-content"><i class="material-icons">add_box</i> Novo</a>
+    </h5>
+    <div class="collection">
+        <?php
+        $qConsultants = $con->query("SELECT * FROM mentors WHERE is_consultant=1");
+        while ($consultant = $qConsultants->fetch_assoc()) {
+            echo "<a href=\"?view=edit_consultant&consultant=$consultant[id]\" class=\"collection-item\">$consultant[name]</a>";
+        }
+
+        ?>
+    </div>
+</div>
+
 
 
 <!-- 

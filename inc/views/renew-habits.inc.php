@@ -78,12 +78,18 @@ if (isset($_GET['done_sub'])) {
         </div>
 
     </form>
+    <div class="row">
+        <div class="col m6 s12 mt-2">
+            <a href="export.php?option=renewHabits" target="_blank" class="btn btn-success">Gerar Planilha</a><br />
+        </div>
+    </div>
     <table class="striped small">
         <tr>
             <th></th>
             <th></th>
             <th></th>
             <th>Nome</th>
+            <th>Diário</th>
             <th>Telefone</th>
             <th>Plano inicial</th>
 
@@ -106,15 +112,16 @@ if (isset($_GET['done_sub'])) {
             return $days;
         }
 
-
-
-
         $search = E($_POST['search_renew_habits']);
-        //    var_dump($loggedMentor);
-        $completion = (isset($_POST['search_renew_habits'])) ? " AND name LIKE '%$search%' OR phone like '%$search%'" : "";
-        $qHabits = $con->query("SELECT id, name, phone, plan, create_date, done_contacted, done_renewed, renew_time FROM habits WHERE create_date <> 'Indefinida' $completion ORDER BY id DESC");
 
-        echo "SELECT id, name, phone, plan, create_date, done_contacted, done_renewed, renew_time FROM habits WHERE create_date <> 'Indefinida' $completion ORDER BY id DESC";
+        $completion = (isset($_POST['search_renew_habits'])) ? " AND name LIKE '%$search%' OR phone like '%$search%'" : "";
+
+        $qHabits = $con->query("SELECT id, name, phone, plan, create_date, done_contacted, done_renewed, renew_time 
+                                FROM habits 
+                                WHERE create_date <> 'Indefinida' $completion 
+                                ORDER BY created_at DESC");
+
+        //echo "SELECT id, name, phone, plan, create_date, done_contacted, done_renewed, renew_time FROM habits WHERE create_date <> 'Indefinida' $completion ORDER BY id DESC";
 
         $habits = [];
         //  var_dump($con);
@@ -128,15 +135,31 @@ if (isset($_GET['done_sub'])) {
 
         $pageCount = ceil(count($habits) / $perPage) + 1;
         $habits = array_slice($habits, $offset, $perPage);
-        foreach ($habits as $row) {
-            $createDate = $row['create_date'];
+        $arrayRenovacao = [];
+        foreach ($habits as $habit) {
+            $vetorRenovacao['id'] = $habit['id'];
+            $vetorRenovacao['createDate'] = $habit['create_date'];
+            $vetorRenovacao['plan'] = $habit['plan'];
+
+            $createDate = $habit['create_date'];
             $days = daysDistance($createDate);
             $months = floor($days / 30);
-            $name = $row['name'];
-            $phone = $row['phone'];
+
+            $vetorRenovacao['name'] = $habit['name'];
+
+            $name = $habit['name'];
+
+            $vetorRenovacao['phone'] = $habit['phone'];
+
+            $phone = $habit['phone'];
+
             $formatedPhone = str_replace(['(', ')', '+', '-'], "", $phone);
+            $vetorRenovacao['formatedPhone'] = $formatedPhone;
             $message = "Mensagem de renovação";
-            $contacted = $row['done_contacted'] == 1 ? " checked" : "";
+            $vetorRenovacao['message'] = $message;
+            $contacted = $habit['done_contacted'] == 1 ? " checked" : "";
+
+            $vetorRenovacao['contacted'] = $contacted;
 
             /////////////////////////////// RIPPED ///////////////////////////////
             // Data de ínicio 
@@ -147,47 +170,77 @@ if (isset($_GET['done_sub'])) {
             $splited = explode("/", $createDate);
             $date    = (new DateTime("$splited[2]-$splited[1]-$splited[0]"));
 
-            // Adiciona 2 meses a data
-            if ($row['renew_time'] == 50) $row['renew_time'] = 0.5;
 
-            $tmp = ($row['renew_time'] * 12) + $row['plan'];
+            $vetorRenovacao['renew_time'] = $habit['renew_time'];
+
+            // Adiciona 2 meses a data
+            if ($habit['renew_time'] == 50) $habit['renew_time'] = 0.5;
+
+            $tmp = ($habit['renew_time'] * 12) + $habit['plan'];
 
             $newDate = $date->add(new DateInterval("P$tmp" . "M"));
+            //var_dump($newDate);die;
             // Altera a nova data para o último dia do mês
             $lDayOfMonth = $newDate->modify('last day of this month');
             $endDate = $lDayOfMonth->format('d/m/Y'); // 2017-12-31
             ////////////////////////////////////////////////////////////////
 
-            $renewed = $row['done_renewed'] == 1 ? " checked" : "";
-            $monthsLeft = intval(daysDistance($endDate) / -30.417);
-        ?>
-            <tr>
+            $vetorRenovacao['endDate'] = $endDate;
 
-                <td></td>
-                <td><a href="https://api.whatsapp.com/send?phone=<?= $formatedPhone ?>&text=<?= $message ?>"><img src="assets/img/whatsapp-icon.svg" width="25"></a></td>
+            $renewed = $habit['done_renewed'] == 1 ? " checked" : "";
+
+            $vetorRenovacao['renewed'] = $renewed;
+
+            $monthsLeft = intval(daysDistance($endDate) / -30.417);
+
+            $vetorRenovacao['monthsLeft'] = $monthsLeft;
+
+            array_push($arrayRenovacao, $vetorRenovacao);
+        }
+
+        // usort($arrayRenovacao, function ($a, $b) {
+        //     return $a['create_date'] - $b['create_date'];
+        // });
+
+        foreach ($arrayRenovacao as $row) {
+        ?>
+            <tr id="row-<?= $row['id']; ?>">
+
+                <td>
+                    <a style="color: #F00;" onclick="deleteHabits(<?= $row['id']; ?>)">
+                        <i class="material-icons" style="cursor: pointer;">delete</i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://api.whatsapp.com/send?phone=<?= $row['formatedPhone']; ?>&text=<?= $row['message']; ?>"><img src="assets/img/whatsapp-icon.svg" width="25"></a>
+                </td>
                 <td>
                     <p>
                         <label>
-                            <input type="checkbox" <?= $contacted  ?>onchange="handleDoneContacted(<?= $row['id']  ?>)" />
+                            <input type="checkbox" <?= $row['contacted']; ?> onchange="handleDoneContacted(<?= $row['id']  ?>)" />
                             <span>Já falei</span>
                         </label>
                         <br />
                         <label>
-                            <input type="checkbox" <?= $renewed  ?> onchange="handleDoneRenewed(<?= $row['id'] ?>)" />
+                            <input type="checkbox" <?= $row['renewed']; ?> onchange="handleDoneRenewed(<?= $row['id'] ?>)" />
                             <span>Renovado</span>
                         </label>
                     </p>
                 </td>
 
-                <td><?= $name  ?></td>
-                <td><?= $phone  ?></td>
+                <td><?= $row['name'];  ?></td>
+                <td>
+                    <a class="waves-effect waves-light btn-small modal-trigger" href="#modal2_<?= $row['id'] ?>" title="Lançar Anotações de : <?= $row['name'];  ?>">
+                        <i class="material-icons">comment</i>
+                    </a>
+                </td>
+                <td><?= $row['phone'];  ?></td>
                 <td>
                     <select data-id="<?= $row['id'] ?>" onchange="handleChangePlan(this)">
                         <option value="0">Não selecionado</option>
                         <?php
                         foreach ([6, 12, 24, 48, 1000] as $plan) {
                             $selected = $row['plan'] == $plan ? "selected" : "";
-                            var_dump($row);
                             $term = $plan == 1000 ? "Vitalício" : "";
                             if (!$term) {
                                 $term = $plan == 6 ? "6 Meses" : $term;
@@ -202,11 +255,12 @@ if (isset($_GET['done_sub'])) {
 
                     </select>
                 </td>
-                <td><?= $createDate  ?></td>
+                <td><?= $row['createDate']  ?></td>
                 <td>
                     <select data-id="<?= $row['id'] ?>" onchange="handleChangeRenewTime(this)">
                         <option value="0">Sem renovação</option>
                         <?php
+                        if ($row['renew_time'] == 50) $row['renew_time'] = 0.5;
                         $selected6 = $row['renew_time'] == 0.5 ? "selected" : "";
                         echo "<option value=\"50\" $selected6>6 Meses</option>";
                         for ($i = 1; $i <= 3; $i++) {
@@ -222,9 +276,79 @@ if (isset($_GET['done_sub'])) {
 
                     </select>
                 </td>
-                <td><?= $endDate  ?></td>
-                <td><?= $monthsLeft  ?></td>
+                <td><?= $row['endDate'];  ?></td>
+                <td><?= $row['monthsLeft'];  ?></td>
             </tr>
+            <div id="modal2_<?= $row['id'] ?>" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                    <h5><i class="material-icons">comment</i> Informações Adicionais</h5>
+                    <span><i class="material-icons">person</i> <?= $row['name'];  ?></span>
+                    <span id="resposta"></span>
+                    <form action="" method="post" class="col s12" id="formSaveAnnotation" enctype="multipart/form-data">
+                        <input type="hidden" name="idUser" value="<?= $row['id'];  ?>">
+                        <input type="hidden" name="nameUser" value="<?= $row['name'];  ?>">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="annotation" name="annotation" class="materialize-textarea" required></textarea>
+                                <label for="textarea1">Anotações</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="file-field input-field">
+                                <div class="btn">
+                                    <span>Anexar Arquivo</span>
+                                    <input type="file" class="btn" id="fileAnnotation">
+                                </div>
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <h5>Anotações</h5>
+                            <ul class="collapsible" id="myAnnotations_<?= $row['id'];  ?>">
+                                <?php
+                                $annotations = $con->query("SELECT * FROM notes_daily WHERE id_user = {$row['id']}");
+                                while ($annotation = $annotations->fetch_assoc()) {
+                                ?>
+                                    <li id="row-<?= $annotation['id']; ?>">
+                                        <div class="collapsible-header" style="display: flex; justify-content: space-between;">
+                                            <div style="display: flex; justify-content: space-between;">
+
+                                                <div>
+                                                    <a onclick="deleteAnnotation(<?= $annotation['id'];  ?>)" title="Excluir Anotação de: <?= $row['name'];  ?>" style="color: #F00">
+                                                        <i class="material-icons">clear</i>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <i class="material-icons">library_books</i><?= $annotation['annotation'] ?>
+                                                </div>
+                                            </div>
+                                            <div><?= date("d/m/Y H:i:s", strtotime($annotation['createdAt'])) ?></div>
+                                        </div>
+                                        <div class="collapsible-body">
+                                            <div style="display: flex; justify-content: space-between;">
+                                                <div><?= $annotation['annotation'] ?></div>
+                                                <?php
+                                                if ($annotation['url'] != '') {
+                                                ?>
+                                                    <div><a href="<?= $annotation['url']; ?>" download><i class="material-icons">cloud_download</i></a></div>
+                                                <?php } ?>
+                                            </div>
+                                        </div>
+                                    </li>
+                                <?php } ?>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn" id="btnSaveAnnotation" onclick="saveAnnotarion(<?= $row['id'];  ?>);">Salvar</button>
+                    <input type="button" class="btn  red modal-close" value="Fechar">
+                </div>
+            </div>
         <?php } ?>
 
     </table>
