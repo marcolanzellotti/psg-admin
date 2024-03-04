@@ -12,6 +12,7 @@ if (isset($_GET['done_sub'])) {
     die("<script>document.location.href=\"painel.php?view=renew_habits\"</script>");
 }
 ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
 <div class="container  scroll-x" id="habits">
 
     <h5>Renovação</h5>
@@ -92,8 +93,8 @@ if (isset($_GET['done_sub'])) {
             <th>Diário</th>
             <th>Telefone</th>
             <th>Plano inicial</th>
-
             <th>Data inicio</th>
+            <th></th>
             <th>Renovação</th>
             <th>Data fim</th>
             <th>Meses para terminar</th>
@@ -255,7 +256,14 @@ if (isset($_GET['done_sub'])) {
 
                     </select>
                 </td>
-                <td><?= $row['createDate']  ?></td>
+                <td id="date_create_<?= $row['id'] ?>">
+                    <?= $row['createDate']; ?>
+                </td>
+                <td>
+                    <a class="waves-effect waves-light btn-small modal-trigger" href="#modalDate_<?= $row['id'] ?>" title="Alterar data de criação">
+                        <i class="material-icons">date_range</i>
+                    </a>
+                </td>
                 <td>
                     <select data-id="<?= $row['id'] ?>" onchange="handleChangeRenewTime(this)">
                         <option value="0">Sem renovação</option>
@@ -349,6 +357,25 @@ if (isset($_GET['done_sub'])) {
                     <input type="button" class="btn  red modal-close" value="Fechar">
                 </div>
             </div>
+            <div id="modalDate_<?= $row['id'] ?>" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                    <h5><i class="material-icons">comment</i> Alterar Data</h5>
+                    <form action="" method="post" class="col s12" id="formSaveDateCreate" enctype="multipart/form-data">
+                        <input type="hidden" name="idUser" value="<?= $row['id'];  ?>">
+                        <input type="hidden" name="idHabits" value="<?= $row['id'];  ?>">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" name="dateCreate" class="datepicker" id="dataInput" placeholder="##/##/####">
+                                <label for="textarea1">Data Criação</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn" id="btnSaveDateCreate" onclick="SaveDateCreate(<?= $row['id']; ?>);">Salvar</button>
+                    <input type="button" class="btn  red modal-close" value="Fechar">
+                </div>
+            </div>
         <?php } ?>
 
     </table>
@@ -362,3 +389,12 @@ if (isset($_GET['done_sub'])) {
         ?>
     </ul>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var dataInput = document.getElementById('dataInput');
+    
+    // Aplicar a máscara de data (DD/MM/AAAA)
+    Inputmask("99/99/9999").mask(dataInput);
+  });
+</script>

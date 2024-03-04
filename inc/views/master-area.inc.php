@@ -247,6 +247,26 @@ if ($view == "master_area") {
 </div>
 <div class="container section">
     <?php
+    if (issetPostFields(['eliminate_password', 'save_eliminate_password'])) {
+        $password = E($_POST['eliminate_password']);
+        file_put_contents("./epasswd.txt", $password);
+    }
+    $password = file_get_contents("./epasswd.txt", true);
+    ?>
+    <h5>Senha plataforma Elimina</h5>
+    (<a target='_blank' href="https://planosecagordura.com.br/elimina">https://planosecagordura.com.br/elimina</a>)
+    <form action="" method="POST">
+        <div class="row">
+            <input type="text" name="eliminate_password" class="col m6 s12" value="<?= $password ?>" id="">
+            <button class="btn waves-effect waves-light col" type="submit" value="submit" name="save_eliminate_password">Salvar
+                <i class="material-icons right">send</i>
+            </button>
+
+        </div>
+    </form>
+</div>
+<div class="container section">
+    <?php
     if (issetPostFields(['trainning_mentor', 'save_trainning_mentor'])) {
         $password = E($_POST['trainning_mentor']);
         file_put_contents("./tpasswd.txt", $password);

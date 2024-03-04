@@ -298,6 +298,41 @@ saveAnnotarion = (e) => {
         "Erro ao enviar o formulário.";
     });
 };
+SaveDateCreate = (e) => {
+  var conteudo = "";
+  document.getElementById("btnSaveDateCreate").innerHTML = "Salvando...";
+  document.getElementById("btnSaveDateCreate").disabled = true;
+
+  var formulario = new FormData(document.getElementById("formSaveDateCreate"));
+  
+  var idHabits = formulario.get("idUser");
+
+  axios
+    .post("/psg-admin/api/save-date-create.php", formulario, {
+      headers: {
+        "Content-Type": "multipart/form-data",
+      },
+    })
+    .then(function (resposta) {
+      M.toast({ html: resposta.data.msg, classes: "rounded" });
+      console.log(resposta);
+      if (!resposta.data.error) {
+        $("#date_create_" + idHabits).html('');
+        conteudo = `<b>${resposta.data.dados.create_date}</b>`;
+        $("#date_create_" + idHabits).append(conteudo);
+        $('.modal').modal();
+      }
+
+      document.getElementById("btnSaveDateCreate").innerHTML = "Salvar";
+      document.getElementById("btnSaveDateCreate").disabled = false;
+      $("#formSaveDateCreate").trigger("reset");
+    })
+    .catch(function (erro) {
+      console.error("Erro ao enviar o formulário", erro);
+      document.getElementById("resposta").innerHTML =
+        "Erro ao enviar o formulário.";
+    });
+};
 
 deleteAnnotation = (e) => {
   var dados = {
